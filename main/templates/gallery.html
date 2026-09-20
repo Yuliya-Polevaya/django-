@@ -1,0 +1,17 @@
+{% extends 'basa.html' %}
+
+{% block title %}Галерея{% endblock title %}
+
+{% block gallery %}
+
+<h1>{{ title }}</h1>
+
+<p>{{ description }}</p>
+
+<ul>
+    {% for item in items %}
+        <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock gallery %}
